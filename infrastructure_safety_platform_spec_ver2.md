@@ -37,6 +37,9 @@ graph TD
 ```
 
 ### 1.2 상세 시나리오
+0.  **사전 준비 (Pre-work - Web Admin):**
+    *   **BIM 업로드 및 변환:** 관리자가 BIM 파일(IFC)을 업로드하면 서버에서 2D 벡터 도면(SVG)으로 자동 변환됩니다. (객체 ID 포함)
+    *   **GIS 위치 보정 (Overlay):** 웹 지도(Naver Map) 위에 변환된 도면을 올리고, 실제 건물 위치에 맞게 회전/크기 조절하여 좌표를 매핑합니다.
 1.  **현장 선택**
     *   조사할 현장 프로젝트를 선택 -> 층별/건물 단위 도면 선택.(해당 도면은 WEB에서 BIM으로 변환된 2D 벡터 도면)
 2.  **초기 상태 (View Mode):**
@@ -56,6 +59,9 @@ graph TD
 7.  **저장 및 AI 분석 요청 (Save & Analyze):**
     *   **Offline:** 현장의 통신이 불안정할 경우, 사진과 수치 데이터만 로컬에 우선 저장됩니다.
     *   **Online/On-Demand:** 사용자가 원할 때(즉시 또는 사무실 복귀 후) **'AI 분석 요청'** 버튼을 누르면, [BIM 속성 + 사진 + 수치정보]가 서버로 전송되어 정밀 분석 및 분류가 수행됩니다.
+8.  **데이터 동기화 (Post-work):**
+    *   현장 조사가 완료되면 모바일 데이터를 서버로 일괄 전송합니다.
+    *   웹 대시보드 상태가 '조사 완료'로 변경되며, 관리자는 웹에서 수집된 데이터를 즉시 검토할 수 있습니다.
 
 ---
 
@@ -202,9 +208,12 @@ Phase 1(App) 및 Phase 2(Web) 구축을 위한 핵심 기술 스택입니다.
     *   **Framework:** **Vite + React** (빠른 빌드 속도 및 최신 생태계 활용)
     *   **Language:** **TypeScript** (BIM 데이터 및 복잡한 안전진단 로직의 타입 안정성 보장)
     *   **UI/UX:** PWA(Progressive Web App) 기술을 활용하여 별도 네이티브 앱 개발 없이 모바일/웹 통합 대응.
+    *   **GIS/Map:** **Naver Maps API** (Web: 도면 오버레이 및 좌표 보정 / Mobile: 위치 기반 도면 로딩)
+    *   **State Management:** **TanStack Query** (서버 데이터 캐싱 및 오프라인 동기화 상태 관리)
 *   **Backend:**
     *   **Framework:** **FastAPI** (Python 기반, 비동기 처리에 강하며 AI 모델 서빙(PyTorch/TensorFlow)과의 연동성이 뛰어남)
     *   **API:** RESTful API 및 WebSocket (실시간 데이터 동기화)
+    *   **BIM Processing:** **IfcOpenShell** or **Autodesk Forge API** (IFC 파일 파싱 및 2D SVG/JSON 형상 정보 추출)
 *   **Database:**
     *   **RDBMS:** **SQLite** 
         *   **현장(Mobile):** 로컬 저장소로 활용 (Offline-First 구현).
