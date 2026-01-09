@@ -1,0 +1,365 @@
+{
+  "project_info": {
+    "project_name": "Antigravity HQ Safety Inspection",
+    "floor_level": "2F",
+    "inspected_date": null, 
+    "inspector_id": null
+  },
+  "elements": [
+    {
+      "element_id": "Slab-2F",
+      "category": "Slab",
+      "name": "2층 바닥 슬라브 전체",
+      "static_info": {
+        "material": "Concrete",
+        "thickness": "210mm",
+        "design_load": "5.0 kN/m2"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": "특이사항 없음"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Room-201",
+      "category": "Space",
+      "name": "사무실 (Unit 201)",
+      "static_info": {
+        "area": "75.5 m2",
+        "finish": "Access Floor + Tile Carpet",
+        "ceiling_height": "2.7m"
+      },
+      "previous_history": {
+        "grade": "B",
+        "note": "천장 텍스 오염(누수 흔적) 관찰 필요"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Room-202",
+      "category": "Space",
+      "name": "대회의실 (Unit 202)",
+      "static_info": {
+        "area": "100.0 m2",
+        "finish": "Vinyl Tile",
+        "occupancy": "Max 20 People"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": null
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Room-Corridor",
+      "category": "Space",
+      "name": "공용 복도",
+      "static_info": {
+        "area": "55.0 m2",
+        "finish": "Polished Stone"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": null
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Beam-B1",
+      "category": "Beam",
+      "name": "철골 보 G1 (사무실 상부)",
+      "static_info": {
+        "material": "Steel (SS275)",
+        "spec": "H-400x200x8x13",
+        "fire_proof": "Sprayed (2hr)"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": "내화피복 상태 양호"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Beam-B2",
+      "category": "Beam",
+      "name": "철골 보 G2 (회의실 상부)",
+      "static_info": {
+        "material": "Steel (SS275)",
+        "spec": "H-400x200x8x13",
+        "fire_proof": "Sprayed (2hr)"
+      },
+      "previous_history": {
+        "grade": "B",
+        "note": "설비 배관 간섭 부위 확인 요망"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Beam-B3",
+      "category": "Beam",
+      "name": "철골 보 G3 (복도 상부)",
+      "static_info": {
+        "material": "Steel (SS275)",
+        "spec": "H-300x150x6.5x9",
+        "fire_proof": "Sprayed (2hr)"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": null
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Wall-W1",
+      "category": "Wall",
+      "name": "외부 옹벽 (서측)",
+      "static_info": {
+        "material": "Reinforced Concrete",
+        "thickness": "200mm",
+        "type": "Load Bearing"
+      },
+      "previous_history": {
+        "grade": "B",
+        "note": "창호 주변 미세 누수 흔적"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Wall-W2",
+      "category": "Wall",
+      "name": "내부 칸막이벽 (사무실-회의실)",
+      "static_info": {
+        "material": "Drywall (Gypsum Board)",
+        "thickness": "120mm",
+        "sound_proof": "Glass Wool 50T"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": null
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Wall-W3",
+      "category": "Wall",
+      "name": "복도 경계벽",
+      "static_info": {
+        "material": "Brick / Block",
+        "thickness": "150mm"
+      },
+      "previous_history": {
+        "grade": "C",
+        "note": "하단부 걸레받이 탈락 있음"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Col-C1",
+      "category": "Column",
+      "name": "C1 기둥 (서북 코너)",
+      "static_info": {
+        "material": "RC (Reinforced Concrete)",
+        "spec": "500x500",
+        "rebar": "8-HD22"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": null
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Col-C2",
+      "category": "Column",
+      "name": "C2 기둥 (중앙 북측)",
+      "static_info": {
+        "material": "RC",
+        "spec": "500x500",
+        "rebar": "8-HD22"
+      },
+      "previous_history": {
+        "grade": "B",
+        "note": "표면 곰보(Honey Comb) 일부 존재"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Col-C3",
+      "category": "Column",
+      "name": "C3 기둥 (동북 코너)",
+      "static_info": {
+        "material": "RC",
+        "spec": "500x500",
+        "rebar": "8-HD22"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": null
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Col-C4",
+      "category": "Column",
+      "name": "C4 기둥 (서남 코너)",
+      "static_info": {
+        "material": "RC",
+        "spec": "500x500",
+        "rebar": "8-HD22"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": null
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Col-C5",
+      "category": "Column",
+      "name": "C5 기둥 (중앙 남측)",
+      "static_info": {
+        "material": "RC",
+        "spec": "600x600 (보강됨)",
+        "rebar": "12-HD25"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": "지난 분기 탄소섬유 보강 완료"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Door-D1",
+      "category": "Door",
+      "name": "회의실 편개 방화문",
+      "static_info": {
+        "type": "Steel Fire Door (60min)",
+        "size": "900x2100",
+        "closer_type": "K-600"
+      },
+      "previous_history": {
+        "grade": "C",
+        "note": "도어클로저 유압 누유로 교체 필요"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    },
+    {
+      "element_id": "Stair-S1",
+      "category": "Stairs",
+      "name": "피난 계단실",
+      "static_info": {
+        "material": "Concrete + Stone Finish",
+        "width": "1200mm",
+        "handrail": "Stainless Steel"
+      },
+      "previous_history": {
+        "grade": "A",
+        "note": "논슬립 테이프 상태 양호"
+      },
+      "current_inspection": {
+        "status": "Not_Inspected",
+        "defect_found": false,
+        "defect_type": null,
+        "photo_url": null,
+        "comment": null
+      }
+    }
+  ]
+}

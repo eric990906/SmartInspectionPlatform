@@ -1,0 +1,48 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .slab { fill: #f9f9f9; stroke: #e0e0e0; stroke-width: 2; }
+      .wall { stroke: #333; stroke-width: 5; fill: none; stroke-linecap: round; }
+      .column { fill: #555; stroke: #000; stroke-width: 1; cursor: pointer; }
+      .beam { stroke: #d32f2f; stroke-width: 2; stroke-dasharray: 5,5; fill: none; opacity: 0.7; }
+      .room-text { font-family: 'Arial'; font-size: 14px; fill: #666; font-weight: bold; pointer-events: none; }
+      .door { stroke: #8d6e63; stroke-width: 3; fill: none; }
+      .stair { stroke: #333; stroke-width: 1; fill: none; }
+      
+      /* 마우스 올렸을 때 효과 (상호작용 힌트) */
+      .column:hover { fill: #d32f2f; }
+      .room-area:hover { fill: rgba(0, 100, 255, 0.1); cursor: pointer; }
+    </style>
+  </defs>
+
+  <rect id="Slab-2F" class="slab" x="50" y="50" width="700" height="500" />
+
+  <rect id="Room-201" class="room-area" x="50" y="50" width="300" height="250" fill="transparent" />
+  <text x="150" y="180" class="room-text">사무실 (Room-201)</text>
+
+  <rect id="Room-202" class="room-area" x="350" y="50" width="400" height="250" fill="transparent" />
+  <text x="500" y="180" class="room-text">회의실 (Room-202)</text>
+  
+  <rect id="Room-Corridor" class="room-area" x="50" y="300" width="500" height="150" fill="transparent" />
+  <text x="250" y="380" class="room-text">복도</text>
+
+  <line id="Beam-B1" class="beam" x1="50" y1="50" x2="350" y2="50" />
+  <line id="Beam-B2" class="beam" x1="350" y1="50" x2="750" y2="50" />
+  <line id="Beam-B3" class="beam" x1="50" y1="300" x2="350" y2="300" />
+
+  <path id="Wall-W1" class="wall" d="M50 50 L50 550 L750 550 L750 50" /> <line id="Wall-W2" class="wall" x1="350" y1="50" x2="350" y2="300" /> <line id="Wall-W3" class="wall" x1="50" y1="300" x2="750" y2="300" /> <rect id="Col-C1" class="column" x="40" y="40" width="20" height="20" />
+  <rect id="Col-C2" class="column" x="340" y="40" width="20" height="20" />
+  <rect id="Col-C3" class="column" x="740" y="40" width="20" height="20" />
+  <rect id="Col-C4" class="column" x="40" y="290" width="20" height="20" />
+  <rect id="Col-C5" class="column" x="340" y="290" width="20" height="20" />
+  
+  <path id="Door-D1" class="door" d="M350 250 A 50 50 0 0 1 300 300" /> 
+  <line x1="350" y1="250" x2="350" y2="300" stroke="#8d6e63" stroke-width="3"/> <g id="Stair-S1">
+    <rect x="550" y="300" width="200" height="150" fill="#eee" stroke="none"/>
+    <line class="stair" x1="550" y1="320" x2="750" y2="320" />
+    <line class="stair" x1="550" y1="340" x2="750" y2="340" />
+    <line class="stair" x1="550" y1="360" x2="750" y2="360" />
+    <line class="stair" x1="550" y1="380" x2="750" y2="380" />
+    <text x="620" y="420" font-family="Arial" font-size="12">계단실</text>
+  </g>
+</svg>
