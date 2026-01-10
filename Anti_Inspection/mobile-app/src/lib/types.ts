@@ -1,4 +1,4 @@
-export type AppMode = "VIEW" | "CREATION";
+export type AppMode = 'INSPECT' | 'REVIEW';
 
 export interface Marker {
     id: number;

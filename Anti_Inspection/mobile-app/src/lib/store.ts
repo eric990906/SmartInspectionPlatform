@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
-import { AppMode, Marker } from './types';
+import type { AppMode, Marker } from './types';
 
 interface AppState {
     mode: AppMode;
