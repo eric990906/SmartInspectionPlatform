@@ -9,4 +9,13 @@ export interface Marker {
     textValue: string;
     drawingData: string;
     createdAt: number;
+    // AI Analysis Data
+    defectType?: string;
+    metrics?: {
+        width?: number;
+        length?: number;
+        area?: number;
+        depth?: number;
+        count?: number;
+    };
 }
